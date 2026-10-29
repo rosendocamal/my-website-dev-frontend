@@ -1,0 +1,416 @@
+/* GNU Geneal Public License v3.0 | github.com/jrosendocamal/website_mywebsite/blob/master/css/style.css
+
+/* Document
+    ========================================================================== */
+
+/* Body
+    ========================================================================== */
+
+/**
+ * Apply a font to all texts.
+ */
+
+body {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+/* Header
+    ========================================================================== */
+
+/**
+ * Background by https://uigradients.com/#Netflix:
+ * 1. Fallback for old browsers
+ * 2. Chrome 10-25, Safari 5.1-6
+ * 3. W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+.
+ */
+
+.header {
+    background: #8E0E00;; /* 1 */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00); /* 2 */
+    background: linear-gradient(to right, hsl(34, 13%, 11%, 0.75), hsl(6, 100%, 28%, 0.75)), url(../img/rosendocamal__background.jpg); /* 3 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation
+    ========================================================================== */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, hsl(34, 13%, 11%, 0.9), hsl(6, 100%, 28%, 0.9));
+    background: linear-gradient(to right, hsl(34, 13%, 11%, 0.9), hsl(6, 100%, 28%, 0.9));
+    text-align: center;
+}
+
+.nav__menu {
+    margin: 2% 0;
+}
+
+.nav__services {
+    display: inline-block;
+    width: 10%;
+    margin-left: 50%;
+}
+
+.nav__gallery {
+    display: inline-block;
+    width: 10%;
+}
+
+.nav__experience {
+    display: inline-block;
+    width: 10%;
+}
+
+.nav__contact {
+    display: inline-block;
+    width: 10%;
+}
+
+.nav__link:link, :active, :visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__link:hover {
+    cursor: pointer;
+    background-color: #8E0E00;
+    padding: 18%;
+    border-radius: 15%;
+}
+
+/* Section main-copywrinting
+    ========================================================================== */
+
+.main-copywriting {
+    margin: 12% 20%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main-copywriting__title {
+    font-size: 500%;
+}
+
+.main-copywriting__cta {
+    background-color: #8E0E00;
+    border: 0;
+    border-radius: 20%;
+    padding: 2%;
+    margin-top: 4%;
+}
+
+.main-copywriting__link:link, :active, :visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Division header__wavy-transitions
+    ========================================================================== */
+
+/**
+ * None
+ */
+
+/* Section services
+    ========================================================================== */
+
+.services {
+    overflow: hidden;
+    padding: 2.5% 10%;
+}
+
+.services__title {
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 5%;
+}
+
+/* Division services_img
+    ========================================================================== */
+
+.services__img {
+    float: left;
+    margin-top: 4%;
+}
+
+/* Division services__copywriting
+    ========================================================================== */
+
+.services__copywriting {
+    float: right;
+    width: 50%;
+    padding-left: 2.5%;
+    padding-right: 7.5%;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.services__span {
+    background-color: #8E0E00;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    width: 4.5%;
+    height: 3%;
+    padding: 0.5%;
+}
+
+/* Section gallery
+    ========================================================================== */
+
+.gallery {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to left, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+    background: linear-gradient(to left, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+    overflow: hidden;
+    padding: 2.5% 10%;
+}
+
+.gallery__title {
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 5%;
+    color: #ffffff;
+}
+
+/* Division gallery__main-container
+    ========================================================================== */
+
+.gallery__main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery__container {
+    width: 30%;
+    margin-bottom: 1%;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Section experience
+    ========================================================================== */
+
+.experience {
+    overflow: hidden;
+    padding: 2.5% 10%;
+}
+
+.experience__title {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+/* Division .experience__main-container
+    ========================================================================== */
+
+.experience__main-container {
+    padding: 0% 7%;
+}
+
+/* Division experience__card
+    ========================================================================== */
+
+.experience__card {
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+
+.experience__supcontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.experience__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.experience__subcontainer {
+    width: 100%;
+    height: 25%;
+}
+
+.experience__subtitle {
+    text-align: center;
+}
+.experience__paragraph {
+    width: 80%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+/* Footer
+    ========================================================================== */
+
+.footer {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+    background: linear-gradient(to right, hsl(34, 13%, 11%, 1), hsl(6, 100%, 28%, 1));
+    overflow: hidden;
+}
+
+/* Division main__wavy-transitions
+    ========================================================================== */
+
+.main__wavy-transitions {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+    background: linear-gradient(to right, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+}
+
+/* Section contact
+    ========================================================================== */
+
+.contact {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+    background: linear-gradient(to right, hsl(34, 13%, 11%, 0.8), hsl(6, 100%, 28%, 0.8));
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 200%;
+    color: #ffffff;
+}
+
+/* Form
+    ========================================================================== */
+
+.form {
+    margin: 10% 5%;
+    width: 90%;
+    height: 500%;
+}
+
+.contact__form-list {
+    padding: 5%;
+    list-style: none;
+    color: #ffffff;
+}
+
+.contact__form-name-label {
+    margin-left: 30%;
+}
+
+.contact__form-name-input {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to left, hsl(34, 13%, 11%, 0.5), hsl(6, 100%, 28%, 0.5));
+    background: linear-gradient(to left, hsl(34, 13%, 11%, 0.3), hsl(6, 100%, 28%, 0.5));
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 110%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    border: 0;
+    border-radius: 
+}
+
+.contact__form-mail-label {
+    margin-left: 30%;
+}
+
+.contact__form-mail-input {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to left, hsl(34, 13%, 11%, 0.5), hsl(6, 100%, 28%, 0.5));
+    background: linear-gradient(to left, hsl(34, 13%, 11%, 0.5), hsl(6, 100%, 28%, 0.5));
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 110%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    border: 0;
+}
+
+.contact__form-msg-label {
+    margin-left: 30%;
+}
+
+.contact__form-msg-input {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to left, hsl(34, 13%, 11%, 0.5), hsl(6, 100%, 28%, 0.5));
+    background: linear-gradient(to left, hsl(34, 13%, 11%, 0.5), hsl(6, 100%, 28%, 0.5));
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 110%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    border: 0;
+}
+
+.contact__form-cta {
+    background: #8E0E00;
+    color: #ffffff;
+    font-size: 110%;
+    margin-left: 30%;
+    background-color: #8E0E00;
+    border: 0;
+    border-radius: 20%;
+    padding: 0.5%;
+    width: 7%;
+    }
+
+/* Division copyright
+    ========================================================================== */
+
+.copyright {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: #ffffff;
+    float: left;
+}
+
+.copyright__logotype {
+    padding-bottom: 2.5%;
+    border-bottom: 2.5px solid #1F1C18;
+}
+
+.copyright__slogan {
+    font-size: 75%;
+    font-weight: normal;
+}
+
+/* Division social-media
+    ========================================================================== */
+
+.social-media{
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: 6%;
+    margin-bottom: 0%;
+}
+
+.social-media__social-network {
+    display: inline-block;
+    list-style: none;
+    margin: 0% 5%;
+}
